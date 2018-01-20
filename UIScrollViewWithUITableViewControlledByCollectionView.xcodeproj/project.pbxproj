@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6234AC7200F1A3C00A6BC53 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6234AC6200F1A3C00A6BC53 /* WebViewController.swift */; };
+		D67EC71C200DD0BA000E4BE9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67EC71B200DD0BA000E4BE9 /* ThirdViewController.swift */; };
 		D6C1A05A20060EFF008D8CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1A05920060EFF008D8CFF /* AppDelegate.swift */; };
 		D6C1A05C20060EFF008D8CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1A05B20060EFF008D8CFF /* ViewController.swift */; };
 		D6C1A05F20060EFF008D8CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C1A05D20060EFF008D8CFF /* Main.storyboard */; };
@@ -15,9 +17,13 @@
 		D6C1A06C20060F69008D8CFF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1A06B20060F69008D8CFF /* FirstViewController.swift */; };
 		D6C1A06E20060F86008D8CFF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1A06D20060F86008D8CFF /* SecondViewController.swift */; };
 		D6C1A0702006112B008D8CFF /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1A06F2006112B008D8CFF /* ButtonCollectionViewCell.swift */; };
+		D6E04E052007141F006A6D53 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E04E042007141F006A6D53 /* ArticleCell.swift */; };
+		D6E04E0820073246006A6D53 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E04E0720073246006A6D53 /* JSONData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D6234AC6200F1A3C00A6BC53 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D67EC71B200DD0BA000E4BE9 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		D6C1A05620060EFF008D8CFF /* UIScrollViewWithUITableViewControlledByCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIScrollViewWithUITableViewControlledByCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C1A05920060EFF008D8CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C1A05B20060EFF008D8CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		D6C1A06B20060F69008D8CFF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		D6C1A06D20060F86008D8CFF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D6C1A06F2006112B008D8CFF /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		D6E04E042007141F006A6D53 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		D6E04E0720073246006A6D53 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,10 +49,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D67EC71D200DD0C7000E4BE9 /* ThirdViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D67EC71B200DD0BA000E4BE9 /* ThirdViewController.swift */,
+			);
+			path = ThirdViewController;
+			sourceTree = "<group>";
+		};
 		D6B870F82006461300E0C437 /* FirstTableView */ = {
 			isa = PBXGroup;
 			children = (
 				D6C1A06B20060F69008D8CFF /* FirstViewController.swift */,
+				D6E04E042007141F006A6D53 /* ArticleCell.swift */,
+				D6234AC6200F1A3C00A6BC53 /* WebViewController.swift */,
 			);
 			path = FirstTableView;
 			sourceTree = "<group>";
@@ -76,17 +94,27 @@
 		D6C1A05820060EFF008D8CFF /* UIScrollViewWithUITableViewControlledByCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				D6E04E062007321D006A6D53 /* Data */,
 				D6C1A05920060EFF008D8CFF /* AppDelegate.swift */,
 				D6C1A05B20060EFF008D8CFF /* ViewController.swift */,
 				D6C1A05D20060EFF008D8CFF /* Main.storyboard */,
 				D6C1A06F2006112B008D8CFF /* ButtonCollectionViewCell.swift */,
 				D6B870F82006461300E0C437 /* FirstTableView */,
 				D6B870F9200648A200E0C437 /* SecondTableView */,
+				D67EC71D200DD0C7000E4BE9 /* ThirdViewController */,
 				D6C1A06020060EFF008D8CFF /* Assets.xcassets */,
 				D6C1A06220060EFF008D8CFF /* LaunchScreen.storyboard */,
 				D6C1A06520060EFF008D8CFF /* Info.plist */,
 			);
 			path = UIScrollViewWithUITableViewControlledByCollectionView;
+			sourceTree = "<group>";
+		};
+		D6E04E062007321D006A6D53 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D6E04E0720073246006A6D53 /* JSONData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C1A06E20060F86008D8CFF /* SecondViewController.swift in Sources */,
+				D6234AC7200F1A3C00A6BC53 /* WebViewController.swift in Sources */,
 				D6C1A06C20060F69008D8CFF /* FirstViewController.swift in Sources */,
 				D6C1A05C20060EFF008D8CFF /* ViewController.swift in Sources */,
+				D6E04E052007141F006A6D53 /* ArticleCell.swift in Sources */,
 				D6C1A0702006112B008D8CFF /* ButtonCollectionViewCell.swift in Sources */,
+				D6E04E0820073246006A6D53 /* JSONData.swift in Sources */,
+				D67EC71C200DD0BA000E4BE9 /* ThirdViewController.swift in Sources */,
 				D6C1A05A20060EFF008D8CFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

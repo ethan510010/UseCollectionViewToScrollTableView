@@ -13,6 +13,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var sports = ["baseball","basketball","soccer"]
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    //調整section的高度，背景色預設是灰色
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0{
+            return 0
+        }else{
+            return CGFloat(10)
+        }
+       
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sports.count
